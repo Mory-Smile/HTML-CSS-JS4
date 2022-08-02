@@ -1,0 +1,179 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Global Rules */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+i {
+  font-size: 30px !important;
+}
+
+.swiper {
+  width: 950px;
+}
+
+/* End Of Global Rules */
+
+section .card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px grey;
+}
+
+section .card::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  background-color: #7d2ae8;
+  border-radius: 20px 20px 0 0;
+}
+
+section .card .card-content {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 45px;
+  position: relative;
+  z-index: 12;
+}
+
+section .card .image {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  padding: 3px;
+  margin: 30px;
+  background-color: #7d2ae8;
+}
+
+section .card .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+section .card .media-icons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+section .card .media-icons i {
+  margin-top: 10px;
+  opacity: 0.6;
+  transition: all 0.3s linear;
+}
+
+section .card .media-icons i:hover {
+  opacity: 1;
+}
+
+section .card .name-profession {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+section .card .name-profession .name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+section .card .name-profession .name.s {
+  margin-bottom: 43px;
+}
+
+section .card .name-profession .profession {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+section .card .name-profession .profession.s {
+  position: absolute;
+  top: 60%;
+  left: 15px;
+}
+
+section .card .rating {
+  display: flex;
+  align-items: center;
+}
+
+section .card .rating i {
+  color: #7d2ae8;
+  padding: 12px;
+  border: 1px solid black;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+section .card .button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+section .card .button button {
+  border: none;
+  padding: 12px 20px;
+  background-color: #7d2ae8;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+section .card .button button:hover {
+  font-size: 16px;
+  background-color: #6616d0;
+}
+
+.swiper-pagination-bullet {
+  height: 15px !important;
+  width: 15px !important;
+  background-color: #7d2ae8 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.8 !important;
+  color: #7d2ae8 !important;
+  transition: all 0.3s linear !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev {
+  opacity: 1 !important;
+  color: #6616d0 !important;
+}
